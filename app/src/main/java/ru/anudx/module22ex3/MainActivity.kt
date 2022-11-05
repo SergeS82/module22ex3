@@ -1,7 +1,6 @@
 package ru.anudx.module22ex3
 
-import android.animation.AnimatorInflater
-import android.animation.LayoutTransition
+import android.animation.*
 import android.app.Activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

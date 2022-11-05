@@ -14,7 +14,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:stateListAnimator="@animator/animator_btn"/>
     <Button
         android:id="@+id/btn_del"
         android:layout_width="wrap_content"
@@ -23,7 +24,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_add"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:stateListAnimator="@animator/animator_btn"/>
 
     <LinearLayout
         android:id="@+id/linear_layout"
