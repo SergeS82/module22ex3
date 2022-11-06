@@ -16,15 +16,16 @@ class MainActivity : AppCompatActivity() {
         b = ActivityMainBinding.inflate(layoutInflater)
         setContentView(b.root)
         b.linearLayout.layoutTransition.enableTransitionType(LayoutTransition.CHANGING)
-        b.linearLayout.layoutTransition.setAnimator(LayoutTransition.APPEARING, AnimatorInflater.loadAnimator(this, R.animator.animator_btn))
+        b.linearLayout.layoutTransition.setAnimator(LayoutTransition.APPEARING, AnimatorInflater.loadAnimator(this, R.animator.anim_liner))
         b.btnAdd.setOnClickListener {
             //val button = findViewById<Button>(R.id.bnt_new)
             val button = Button(this)
+            button.stateListAnimator = AnimatorInflater.loadStateListAnimator(this, R.animator.animator_btn)
             button.text = "QWERTY"
             button.scaleX = 0f
             button.scaleY = 0f
             button.setOnClickListener {
-                (it as Button).text = "1234567890"
+                (it as Button).text = "1234567890123456789"
             }
             b.linearLayout.addView(button)
         }
