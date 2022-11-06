@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         b = ActivityMainBinding.inflate(layoutInflater)
         setContentView(b.root)
         b.linearLayout.layoutTransition.enableTransitionType(LayoutTransition.CHANGING)
-        b.linearLayout.layoutTransition.setAnimator(LayoutTransition.APPEARING, AnimatorInflater.loadAnimator(this, R.anim.anim_liner))
+        b.linearLayout.layoutTransition.setAnimator(LayoutTransition.APPEARING, AnimatorInflater.loadAnimator(this, R.animator.animator_btn))
         b.btnAdd.setOnClickListener {
             //val button = findViewById<Button>(R.id.bnt_new)
             val button = Button(this)
